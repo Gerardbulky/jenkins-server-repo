@@ -1,2 +1,6 @@
 Flask==3.0.0
+<<<<<<< HEAD
 Werkzeug==3.0.1
+=======
+Werkzeug==3.0.1
+>>>>>>> d03d41fcb7377e039cdbf03b68e7b063b3a37d64
