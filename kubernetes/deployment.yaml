@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vault-images
+spec:
+  selector:
+    matchLabels:
+      app: vault-images
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vault-images
+    spec:
+      containers:
+      - name: vault-images
+        image: bossmanjerry/vault-images:16
+        ports:
+        - containerPort: 5000
